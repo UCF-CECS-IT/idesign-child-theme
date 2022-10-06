@@ -38,7 +38,6 @@ if ( $projectType || $projectFocus ) {
 		);
 	}
 
-	var_dump($projectFocus, $projectType);
 }
 
 $query = new WP_Query( $args );
@@ -90,6 +89,8 @@ $query = new WP_Query( $args );
 			<?php foreach( $query->posts as $post ):
 				$image = get_field( 'project_image', $post->ID );
 				$link = get_the_permalink( $post );
+				$purpose = get_field( 'project_purpose', $post->ID );
+
 				?>
 				<div class="card box-shadow rounded mb-3">
 					<div class="card-block">
@@ -102,7 +103,10 @@ $query = new WP_Query( $args );
 								<?php endif; ?>
 							</div>
 							<div class="col-lg-9">
-								<h5><?php echo $post->post_title; ?></h5>
+								<a class="project-title" href="<?php echo $link; ?>"><h5 class=" text-secondary"><?php echo $post->post_title; ?></h5></a>
+								<div class="font-size-sm">
+									<?php echo $purpose; ?>
+								</div>
 							</div>
 						</div>
 					</div>

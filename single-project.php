@@ -13,6 +13,7 @@ $image = get_field( 'project_image' );
 $sponsorName = get_field( 'project_sponsor_name' );
 $sponsorLogo = get_field( 'project_sponsor_logo' );
 $sponsorLink = get_field( 'project_sponsor_link' );
+$video = get_field( 'project_video' );
 
 ?>
 
@@ -52,12 +53,20 @@ $sponsorLink = get_field( 'project_sponsor_link' );
 				<div class="row">
 					<div class="col-lg-6">
 						<h6>Focus Area:</h6>
-
+						<ul class="pl-4">
+							<?php foreach($focusAreas as $focus): ?>
+								<li><?php echo $focus; ?></li>
+							<?php endforeach; ?>
+						</ul>
 					</div>
 
 					<div class="col-lg-6">
 						<h6>Project Type:</h6>
-
+						<ul class="pl-4">
+							<?php foreach($type as $t): ?>
+								<li><?php echo $t; ?></li>
+							<?php endforeach; ?>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -78,6 +87,12 @@ $sponsorLink = get_field( 'project_sponsor_link' );
 				<?php if ( $image ): ?>
 					<div class="mb-3">
 						<img class="img-fluid" src="<?php echo $image; ?>">
+					</div>
+				<?php endif; ?>
+
+				<?php if ( $video ): ?>
+					<div class="embed-responsive embed-responsive-16by9 mb-3">
+						<iframe class="embed-responsive-item" src="<?php echo $video; ?>" allowfullscreen></iframe>
 					</div>
 				<?php endif; ?>
 

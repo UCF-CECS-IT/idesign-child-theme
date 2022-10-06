@@ -64,3 +64,11 @@
   box-shadow: rgb(0 0 0 / 15%) 0px 2px 5px;
     -webkit-box-shadow: rgb(0 0 0 / 15%) 0px 2px 5px;
 }
+
+.project-title {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
