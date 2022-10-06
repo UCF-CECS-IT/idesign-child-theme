@@ -21,4 +21,46 @@
 //
 
 // Add/import your theme's custom styles here
-// ...
+
+
+.breadcrumb {
+  list-style: none;
+
+  li {
+    display: inline-block;
+  }
+
+  li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+  }
+}
+
+#navbar {
+  background-color: #000000bf;
+}
+
+.title-brand {
+  font-weight: 500;
+  text-decoration: none;
+  display: inline;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.header-logo {
+  object-fit: contain;
+  object-position: center;
+  height: 75px;
+  // width: 50px;
+}
+
+.box-shadow {
+  // -webkit-box-shadow: 0.1em 0.1em 0.5em rgb(0 0 0 / 33%);
+  // box-shadow: 0.1em 0.1em 0.5em rgb(0 0 0 / 33%);
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 5px;
+    -webkit-box-shadow: rgb(0 0 0 / 15%) 0px 2px 5px;
+}

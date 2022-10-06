@@ -2,11 +2,11 @@
 /**
  * Handle all theme configuration here
  **/
-namespace MyProject\Theme\Includes\Config;
+namespace IDESIGN\Theme\Includes\Config;
 
 
-define( 'MYPROJECT_THEME_URL', get_stylesheet_directory_uri() );
-define( 'MYPROJECT_THEME_STATIC_URL', MYPROJECT_THEME_URL . '/static' );
-define( 'MYPROJECT_THEME_CSS_URL', MYPROJECT_THEME_STATIC_URL . '/css' );
-define( 'MYPROJECT_THEME_JS_URL', MYPROJECT_THEME_STATIC_URL . '/js' );
-define( 'MYPROJECT_THEME_IMG_URL', MYPROJECT_THEME_STATIC_URL . '/img' );
+define( 'IDESIGN_THEME_URL', get_stylesheet_directory_uri() );
+define( 'IDESIGN_THEME_STATIC_URL', IDESIGN_THEME_URL . '/static' );
+define( 'IDESIGN_THEME_CSS_URL', IDESIGN_THEME_STATIC_URL . '/css' );
+define( 'IDESIGN_THEME_JS_URL', IDESIGN_THEME_STATIC_URL . '/js' );
+define( 'IDESIGN_THEME_IMG_URL', IDESIGN_THEME_STATIC_URL . '/img' );
