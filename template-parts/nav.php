@@ -53,15 +53,15 @@ $twitter = get_theme_mod( 'social_twitter' );
 			<?php if ( $youtube || $facebook || $twitter ): ?>
 				<div class="social-icons">
 					<?php if ( $youtube ): ?>
-						<a class="inline-block mx-1" href="<?php echo $youtube; ?>" target="_blank"><i class="fa fa-youtube-square fa-2x text-primary" aria-hidden="true"></i></a>
+						<a class="inline-block mx-1" href="<?php echo $youtube; ?>" target="_blank"><i class="fab fa-youtube fa-2x text-primary" aria-hidden="true"></i></a>
 					<?php endif; ?>
 
 					<?php if ( $facebook ): ?>
-						<a class="inline-block mx-1" href="<?php echo $facebook; ?>" target="_blank"><i class="fa fa-facebook-square fa-2x text-primary" aria-hidden="true"></i></a>
+						<a class="inline-block mx-1" href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-square fa-2x text-primary" aria-hidden="true"></i></a>
 					<?php endif; ?>
 
 					<?php if ( $twitter ): ?>
-						<a class="inline-block mx-1" href="<?php echo $twitter; ?>" target="_blank"><i class="fa fa-twitter-square fa-2x text-primary" aria-hidden="true"></i></a>
+						<a class="inline-block mx-1" href="<?php echo $twitter; ?>" target="_blank"><i class="fab fa-twitter-square fa-2x text-primary" aria-hidden="true"></i></a>
 					<?php endif; ?>
 
 				</div>
